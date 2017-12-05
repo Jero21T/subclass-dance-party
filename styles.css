@@ -21,7 +21,17 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
+  border:10px solid white;
   border-radius:10px;
   position:absolute;
+}
+
+.flippyDancer {
+  border:10px solid black;
+  border-radius:10px;
+  position:absolute;
+  perspective: 1000px;
+  transform: rotateY(180deg);
+  transition: 0.1s;
+
 }
