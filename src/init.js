@@ -28,16 +28,17 @@ $(document).ready(function() {
       Math.random() * 1000
     );
 
-    window.dancers.push(dancer.$node);
+    window.dancers.push(dancer);
 
     $('body').append(dancer.$node);
   });
   
 
   $('.lineDancingButton').on('click', function(event) {
-   //loop inside here
+   //loop inside here]
+debugger;
     for (var i = 0; i < window.dancers.length; i++) {
-      window.dancers[i].setPosition(($('body').height() / 2), ($('body').width() / window.dancers.length)); 
+      window.dancers[i].setPosition(($('body').height() / 2), (($('body').width() / window.dancers.length) * i)); 
     }
   });
 
