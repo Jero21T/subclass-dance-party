@@ -36,7 +36,7 @@ $(document).ready(function() {
 
   $('.lineDancingButton').on('click', function(event) {
    //loop inside here]
-debugger;
+
     for (var i = 0; i < window.dancers.length; i++) {
       window.dancers[i].setPosition(($('body').height() / 2), (($('body').width() / window.dancers.length) * i)); 
     }
